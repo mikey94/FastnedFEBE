@@ -1,0 +1,103 @@
+@import '../../utils/colors/colors.scss';
+
+.container {
+  display: flex;
+  flex: 1;
+  background-color: $main-green;
+  height: 60px;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 0 20px 0 20px;
+  align-items: center;
+}
+
+.logoWrapper {
+  display: flex;
+  border-radius: 10px;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+.navigation-web {
+  display: flex;
+  flex-direction: row;
+}
+
+.navigation-mobile-open {
+  display: flex;
+  flex: 0.5;
+  flex-direction: column;
+  background-color: $main-green;
+  margin-top: 0 !important;
+  margin-right: 0 !important;
+  z-index: 10;
+  text-align: right;
+}
+
+.navigation-mobile-close {
+  display: none;
+  justify-content: flex-end;
+}
+
+.menu-mobile {
+  display: none;
+  margin: 10px;
+}
+
+.link {
+  text-decoration: none;
+}
+
+h4 {
+  padding: 0 15px 0 0;
+  font-family: 'Share Tech Mono', monospace;
+  color: $white;
+  cursor: pointer;
+}
+
+h4:hover {
+  color: $main-blue;
+}
+
+.bars-style {
+  color: $white;
+}
+.bars-style:hover {
+  color: $main-blue;
+}
+
+@media screen and (max-width: 600px) {
+  .navigation-web {
+    display: none;
+  }
+  .navigation-mobile-open {
+    display: flex;
+    flex: 0.5;
+    flex-direction: column;
+    background-color: $main-green;
+    margin-top: 0 !important;
+    margin-right: 0 !important;
+    z-index: 10;
+    text-align: right;
+  }
+  .container {
+    padding: 0 10px 0 10px;
+  }
+  .menu-mobile {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .navigation-mobile-open {
+    display: none;
+  }
+  .menu-mobile {
+    display: none;
+  }
+}

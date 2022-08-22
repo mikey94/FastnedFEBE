@@ -1,0 +1,30 @@
+@import '../../utils/colors/colors.scss';
+
+.wrapper {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.list-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper-location {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.add-button {
+  height: 30px;
+  background-color: rgb(250, 210, 34);
+  margin: 10px;
+  border-radius: 5px;
+}
+
+.link {
+  text-decoration: none;
+}

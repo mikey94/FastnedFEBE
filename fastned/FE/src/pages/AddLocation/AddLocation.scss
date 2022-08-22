@@ -1,0 +1,131 @@
+@import '../../utils/colors/colors.scss';
+
+.wrapper {
+  display: flex;
+  flex: 1;
+}
+
+.overlay {
+  filter: blur(10px);
+}
+
+.add-location-wrapper {
+  margin: 10px;
+  border: 1px solid rgb(151, 151, 151, 0.3);
+  padding: 10px;
+}
+
+.table-title {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.horizontal {
+  display: flex;
+  flex-direction: row;
+}
+
+.add-charger-wrapper {
+  margin: 10px;
+  border: 1px solid rgb(151, 151, 151, 0.3);
+  padding: 10px;
+}
+
+.table-wrapper {
+  display: flex;
+  width: 100%;
+  border-radius: 5;
+  background-color: #fff;
+  justify-content: flex-start;
+  flex-direction: column;
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  tr:nth-child(odd) td {
+    background-color: $background-gray;
+  }
+
+  tr:nth-child(even) td {
+    background-color: $white;
+  }
+
+  th {
+    background-color: $background-gray;
+    font-family: $font-family;
+    color: $header-gray;
+    padding: 5px;
+    font-size: 14px;
+    height: 35px;
+    text-align: left;
+  }
+
+  td {
+    font-family: $font-family;
+    color: $text-gray;
+    font-size: 12px;
+    text-align: left;
+    padding: 10px 10px 10px 12px;
+    background-color: #fff;
+    border-bottom: 0.6pt solid $main-background;
+  }
+}
+
+.empty-charger-text {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  font-size: 10px;
+  color: rgb(131, 131, 131);
+}
+
+.back-button {
+  height: 30px;
+  background-color: rgb(199, 199, 199);
+  margin: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-button {
+  height: 30px;
+  background-color: rgb(250, 210, 34);
+  margin: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.save-button {
+  height: 30px;
+  background-color: rgb(250, 210, 34);
+  margin: 10px;
+  border-radius: 5px;
+  width: 100px;
+  align-self: flex-end;
+  cursor: pointer;
+}
+
+.wrapper-charger {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.add-charger-popup {
+  display: flex;
+  width: 100%;
+  padding: 0 10px 0 10px;
+  flex: 1;
+  position: absolute;
+  z-index: 100;
+  justify-self: center;
+  margin-left: 0 auto;
+  margin-top: 5rem;
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: flex-end;
+}

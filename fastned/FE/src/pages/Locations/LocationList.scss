@@ -1,0 +1,43 @@
+@import '../../utils/colors/colors.scss';
+
+.table-wrapper {
+  display: flex;
+  width: 100%;
+  border-radius: 5;
+  background-color: #fff;
+  justify-content: flex-start;
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  tr:nth-child(odd) td{
+    background-color: $background-gray;
+  }
+
+  tr:nth-child(even) td{
+    background-color: $white;
+  }
+
+
+  th {
+    background-color: $background-gray;
+    font-family: $font-family;
+    color: $header-gray;
+    padding: 5px;
+    font-size: 14px;
+    height: 35px;
+    text-align: left;
+  }
+
+  td {
+    font-family: $font-family;
+    color: $text-gray;
+    font-size: 12px;
+    text-align: left;
+    padding: 10px 10px 10px 12px;
+    background-color: #fff;
+    border-bottom: 0.6pt solid $main-background;
+  }
+}
